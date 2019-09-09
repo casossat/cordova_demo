@@ -1,0 +1,44 @@
+<section class="container-fluid" id="uno" style="background-color: rgb(255, 233, 237); min-height: 80vh;">
+  <div class="row">
+    <div class="col-12">
+      <h3>A continuación un ejemplo sencillo del doble binding:</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <form>
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" class="form-control" id="name" name="name" [(ngModel)]="data.name">
+        </div>
+        <div class="form-group">
+          <label for="lastname">Apellido</label>
+          <input type="text" class="form-control" id="lastname" name="lastname" [(ngModel)]="data.lastname">
+        </div>
+      </form>
+
+      <button type="button" class="btn btn-primary" (click)="btnClick()">Click me!</button>
+    </div>
+
+    <div class="col-6">
+      <h5>A continuación un ejemplo sencillo del binding:</h5>
+      <app-son [dataSon]="data"></app-son>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid" id="dos" style="background-color: rgb(230, 230, 255); min-height: 80vh;">
+  <div class="row">
+    <div class="col-12">
+
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid" id="tres" style="background-color: rgb(234, 255, 234); min-height: 80vh;">
+  <div class="row">
+    <div class="col-12">
+
+    </div>
+  </div>
+</section>
